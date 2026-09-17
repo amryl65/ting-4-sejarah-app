@@ -73,7 +73,7 @@ function App() {
           onTimeout={handleTimeout}
         />
       )}
-      {appState === 'results' && <ResultsView results={results} onRestart={startQuiz} />}
+      {appState === 'results' && <ResultsView results={results} onRestart={startQuiz} onHome={goHome} />}
     </>
   );
 }

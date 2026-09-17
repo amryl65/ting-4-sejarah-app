@@ -1,4 +1,4 @@
-export default function ResultsView({ results, onRestart }) {
+export default function ResultsView({ results, onRestart, onHome }) {
   const total = results.length;
   const correctCount = results.filter(r => r.isCorrect).length;
   const percentage = (correctCount / total) * 100;
@@ -44,8 +44,11 @@ export default function ResultsView({ results, onRestart }) {
         ))}
       </div>
 
-      <div className="text-center mt-4">
-        <button className="comic-button secondary" onClick={onRestart}>
+      <div className="text-center mt-4" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        <button className="comic-button secondary" onClick={onHome}>
+          Menu Utama
+        </button>
+        <button className="comic-button primary" onClick={onRestart}>
           Cuba Lagi!
         </button>
       </div>
