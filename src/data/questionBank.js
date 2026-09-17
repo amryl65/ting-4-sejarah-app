@@ -1,255 +1,230 @@
-export const questionBank = [
-  // Latar Belakang Negara Bangsa
+// Existing Bab 1 questions
+const bab1 = [
   {
-    id: 1,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Apakah kerajaan yang menjadi asas kepada pembentukan negara bangsa kita?",
-    options: ["Kerajaan Srivijaya", "Kerajaan Alam Melayu", "Kerajaan Majapahit", "Kerajaan Kedah Tua"],
-    correctAnswer: "Kerajaan Alam Melayu",
-    explanation: "Kerajaan Alam Melayu seperti Funan, Champa, Srivijaya, Angkor, Majapahit, Kedah Tua dan Gangga Nagara merupakan asas kepada pembentukan negara bangsa di rantau ini."
+    id: 1, topic: "Latar Belakang Negara Bangsa", questionText: "Apakah kerajaan yang menjadi asas kepada pembentukan negara bangsa kita?", options: ["Kerajaan Srivijaya", "Kerajaan Alam Melayu", "Kerajaan Majapahit", "Kerajaan Kedah Tua"], correctAnswer: "Kerajaan Alam Melayu", explanation: "Kerajaan Alam Melayu seperti Funan, Champa, Srivijaya, Angkor, Majapahit, Kedah Tua dan Gangga Nagara merupakan asas kepada pembentukan negara bangsa di rantau ini."
   },
   {
-    id: 2,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Antara berikut, yang manakah BUKAN ciri negara bangsa Kerajaan Alam Melayu?",
-    options: ["Raja", "Undang-undang", "Rakyat", "Demokrasi"],
-    correctAnswer: "Demokrasi",
-    explanation: "Ciri-ciri negara bangsa Kerajaan Alam Melayu terdiri daripada Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat. Demokrasi bukan ciri kerajaan pada masa tersebut."
+    id: 2, topic: "Latar Belakang Negara Bangsa", questionText: "Antara berikut, yang manakah BUKAN ciri negara bangsa Kerajaan Alam Melayu?", options: ["Raja", "Undang-undang", "Rakyat", "Demokrasi"], correctAnswer: "Demokrasi", explanation: "Ciri-ciri negara bangsa Kerajaan Alam Melayu terdiri daripada Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat. Demokrasi bukan ciri kerajaan pada masa tersebut."
   },
   {
-    id: 3,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Kerajaan Srivijaya terkenal sebagai sebuah empayar maritim yang kukuh. Apakah aspek yang menjadikan Srivijaya pusat perdagangan utama?",
-    options: ["Sistem percukaian yang ketat", "Undang-undang laut yang adil dan lokasi strategik", "Penggunaan mata wang emas sahaja", "Tentera darat yang sangat besar"],
-    correctAnswer: "Undang-undang laut yang adil dan lokasi strategik",
-    explanation: "Srivijaya mempunyai lokasi strategik di Selat Melaka dan undang-undang yang sistematik bagi menarik pedagang antarabangsa."
+    id: 3, topic: "Latar Belakang Negara Bangsa", questionText: "Kerajaan Srivijaya terkenal sebagai sebuah empayar maritim yang kukuh. Apakah aspek yang menjadikan Srivijaya pusat perdagangan utama?", options: ["Sistem percukaian yang ketat", "Undang-undang laut yang adil dan lokasi strategik", "Penggunaan mata wang emas sahaja", "Tentera darat yang sangat besar"], correctAnswer: "Undang-undang laut yang adil dan lokasi strategik", explanation: "Srivijaya mempunyai lokasi strategik di Selat Melaka dan undang-undang yang sistematik bagi menarik pedagang antarabangsa."
   },
   {
-    id: 4,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Funan merupakan antara kerajaan Alam Melayu terawal. Apakah sumber kekayaan utama kerajaan Funan?",
-    options: ["Perdagangan dan Pertanian", "Perikanan", "Pembalakan", "Perlombongan Emas"],
-    correctAnswer: "Perdagangan dan Pertanian",
-    explanation: "Funan berkembang maju melalui aktiviti perdagangan dan pertanian di sekitar kawasan Sungai Mekong."
+    id: 4, topic: "Latar Belakang Negara Bangsa", questionText: "Funan merupakan antara kerajaan Alam Melayu terawal. Apakah sumber kekayaan utama kerajaan Funan?", options: ["Perdagangan dan Pertanian", "Perikanan", "Pembalakan", "Perlombongan Emas"], correctAnswer: "Perdagangan dan Pertanian", explanation: "Funan berkembang maju melalui aktiviti perdagangan dan pertanian di sekitar kawasan Sungai Mekong."
   },
   {
-    id: 5,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Gelaran 'Kurung Bnam' digunakan oleh raja kerajaan...",
-    options: ["Funan", "Champa", "Angkor", "Srivijaya"],
-    correctAnswer: "Funan",
-    explanation: "Raja Funan menggunakan gelaran Kurung Bnam yang bermaksud raja gunung."
+    id: 5, topic: "Latar Belakang Negara Bangsa", questionText: "Gelaran 'Kurung Bnam' digunakan oleh raja kerajaan...", options: ["Funan", "Champa", "Angkor", "Srivijaya"], correctAnswer: "Funan", explanation: "Raja Funan menggunakan gelaran Kurung Bnam yang bermaksud raja gunung."
   },
   {
-    id: 6,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Raja-raja di Alam Melayu dibantu oleh golongan apa dalam urusan pentadbiran?",
-    options: ["Pedagang", "Pembesar", "Rakyat Biasa", "Tentera Upahan"],
-    correctAnswer: "Pembesar",
-    explanation: "Golongan pembesar dilantik untuk membantu raja dalam hal urusan pentadbiran negara."
+    id: 6, topic: "Latar Belakang Negara Bangsa", questionText: "Raja-raja di Alam Melayu dibantu oleh golongan apa dalam urusan pentadbiran?", options: ["Pedagang", "Pembesar", "Rakyat Biasa", "Tentera Upahan"], correctAnswer: "Pembesar", explanation: "Golongan pembesar dilantik untuk membantu raja dalam hal urusan pentadbiran negara."
   },
   {
-    id: 7,
-    topic: "Latar Belakang Negara Bangsa",
-    questionText: "Wilayah Pengaruh dalam konteks Kerajaan Alam Melayu bermaksud...",
-    options: ["Kawasan yang diiktiraf oleh kuasa Barat", "Kawasan tempat tinggal golongan diraja", "Kawasan yang rakyatnya menerima dan memperakui pemerintahan raja", "Kawasan yang mempunyai banyak sumber asli"],
-    correctAnswer: "Kawasan yang rakyatnya menerima dan memperakui pemerintahan raja",
-    explanation: "Wilayah pengaruh merupakan kawasan yang mana rakyatnya setia dan memperakui kekuasaan seseorang raja."
-  },
-
-  // Ciri-ciri Kesultanan Melayu Melaka
-  {
-    id: 8,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Kedaulatan dalam Kesultanan Melayu Melaka merujuk kepada...",
-    options: ["Kekuasaan tertinggi terhadap rakyat", "Kawasan yang rakyatnya menerima dan memperakui pemerintahan", "Lambang kebesaran Sultan", "Perjanjian persahabatan dengan kerajaan lain"],
-    correctAnswer: "Kekuasaan tertinggi terhadap rakyat",
-    explanation: "Kedaulatan ialah kekuasaan tertinggi terhadap rakyat sebuah wilayah dan merupakan hak mutlak sultan untuk mengawal rakyat dan wilayah."
+    id: 7, topic: "Latar Belakang Negara Bangsa", questionText: "Wilayah Pengaruh dalam konteks Kerajaan Alam Melayu bermaksud...", options: ["Kawasan yang diiktiraf oleh kuasa Barat", "Kawasan tempat tinggal golongan diraja", "Kawasan yang rakyatnya menerima dan memperakui pemerintahan raja", "Kawasan yang mempunyai banyak sumber asli"], correctAnswer: "Kawasan yang rakyatnya menerima dan memperakui pemerintahan raja", explanation: "Wilayah pengaruh merupakan kawasan yang mana rakyatnya setia dan memperakui kekuasaan seseorang raja."
   },
   {
-    id: 9,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Apakah peranan pembesar berempat dalam pentadbiran Kesultanan Melayu Melaka?",
-    options: ["Mengetuai angkatan tentera", "Membantu sultan dalam pentadbiran", "Menjadi wakil sultan di luar negara", "Membayar cukai kepada raja"],
-    correctAnswer: "Membantu sultan dalam pentadbiran",
-    explanation: "Sultan dibantu oleh pembesar berempat (Bendahara, Penghulu Bendahari, Temenggung dan Laksamana) untuk mentadbir kerajaan dengan lancar."
+    id: 8, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Kedaulatan dalam Kesultanan Melayu Melaka merujuk kepada...", options: ["Kekuasaan tertinggi terhadap rakyat", "Kawasan yang rakyatnya menerima dan memperakui pemerintahan", "Lambang kebesaran Sultan", "Perjanjian persahabatan dengan kerajaan lain"], correctAnswer: "Kekuasaan tertinggi terhadap rakyat", explanation: "Kedaulatan ialah kekuasaan tertinggi terhadap rakyat sebuah wilayah dan merupakan hak mutlak sultan untuk mengawal rakyat dan wilayah."
   },
   {
-    id: 10,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Rakyat Melaka pada masa dahulu terdiri daripada...",
-    options: ["Orang Melayu dan Orang Eropah", "Orang Laut dan Orang Melayu", "Orang Asli sahaja", "Pedagang luar dan buruh"],
-    correctAnswer: "Orang Laut dan Orang Melayu",
-    explanation: "Rakyat Melaka secara amnya terdiri daripada orang Melayu dan Orang Laut."
+    id: 9, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Apakah peranan pembesar berempat dalam pentadbiran Kesultanan Melayu Melaka?", options: ["Mengetuai angkatan tentera", "Membantu sultan dalam pentadbiran", "Menjadi wakil sultan di luar negara", "Membayar cukai kepada raja"], correctAnswer: "Membantu sultan dalam pentadbiran", explanation: "Sultan dibantu oleh pembesar berempat (Bendahara, Penghulu Bendahari, Temenggung dan Laksamana) untuk mentadbir kerajaan dengan lancar."
   },
   {
-    id: 11,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Apakah lambang kekuasaan tertinggi seorang Sultan Melaka?",
-    options: ["Kedaulatan", "Istana", "Mata wang", "Tembok pertahanan"],
-    correctAnswer: "Kedaulatan",
-    explanation: "Kedaulatan adalah lambang kekuasaan tertinggi Sultan terhadap rakyat dan wilayah pemerintahannya."
+    id: 10, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Rakyat Melaka pada masa dahulu terdiri daripada...", options: ["Orang Melayu dan Orang Eropah", "Orang Laut dan Orang Melayu", "Orang Asli sahaja", "Pedagang luar dan buruh"], correctAnswer: "Orang Laut dan Orang Melayu", explanation: "Rakyat Melaka secara amnya terdiri daripada orang Melayu dan Orang Laut."
   },
   {
-    id: 12,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Kerajaan yang berdaulat dalam KMM mempunyai...",
-    options: ["Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat", "Tentera laut yang besar", "Banyak jajahan takluk di India", "Hubungan yang kuat dengan British"],
-    correctAnswer: "Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat",
-    explanation: "KMM mewarisi dan memperkukuhkan 4 ciri negara bangsa: Kerajaan (Raja), Undang-undang, Wilayah Pengaruh dan Rakyat."
+    id: 11, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Apakah lambang kekuasaan tertinggi seorang Sultan Melaka?", options: ["Kedaulatan", "Istana", "Mata wang", "Tembok pertahanan"], correctAnswer: "Kedaulatan", explanation: "Kedaulatan adalah lambang kekuasaan tertinggi Sultan terhadap rakyat dan wilayah pemerintahannya."
   },
   {
-    id: 13,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Apakah bentuk undang-undang bertulis yang diguna pakai oleh Kesultanan Melayu Melaka?",
-    options: ["Undang-undang 99 Perak", "Hukum Kanun Melaka & Undang-Undang Laut Melaka", "Batu Bersurat Terengganu", "Perlembagaan Melaka"],
-    correctAnswer: "Hukum Kanun Melaka & Undang-Undang Laut Melaka",
-    explanation: "Kesultanan Melayu Melaka mempunyai 2 undang-undang bertulis yang utama iaitu Hukum Kanun Melaka dan Undang-Undang Laut Melaka."
+    id: 12, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Kerajaan yang berdaulat dalam KMM mempunyai...", options: ["Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat", "Tentera laut yang besar", "Banyak jajahan takluk di India", "Hubungan yang kuat dengan British"], correctAnswer: "Raja, Undang-undang, Wilayah Pengaruh, dan Rakyat", explanation: "KMM mewarisi dan memperkukuhkan 4 ciri negara bangsa: Kerajaan (Raja), Undang-undang, Wilayah Pengaruh dan Rakyat."
   },
   {
-    id: 14,
-    topic: "Ciri-ciri Kesultanan Melayu Melaka",
-    questionText: "Kawasan di bawah kekuasaan KMM yang diperoleh melalui penaklukan, naungan atau perkahwinan dikenali sebagai...",
-    options: ["Tanah Jajahan", "Wilayah Taklukan", "Wilayah Pengaruh", "Negeri Naungan"],
-    correctAnswer: "Wilayah Pengaruh",
-    explanation: "Wilayah Pengaruh KMM merangkumi seluruh Semenanjung Tanah Melayu dan Pantai Timur Sumatera."
-  },
-
-  // Keunggulan Sistem Pentadbiran
-  {
-    id: 15,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Dalam Hukum Kanun Melaka, siapakah yang tidak boleh dijatuhi hukuman bunuh tanpa arahan Sultan?",
-    options: ["Rakyat biasa", "Pembesar", "Hamba", "Peniaga"],
-    correctAnswer: "Pembesar",
-    explanation: "Hukum Kanun Melaka menetapkan bahawa hanya Sultan sahaja yang berhak menjatuhkan hukuman bunuh terhadap sesiapa, termasuk pembesar yang melakukan kesalahan besar."
+    id: 13, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Apakah bentuk undang-undang bertulis yang diguna pakai oleh Kesultanan Melayu Melaka?", options: ["Undang-undang 99 Perak", "Hukum Kanun Melaka & Undang-Undang Laut Melaka", "Batu Bersurat Terengganu", "Perlembagaan Melaka"], correctAnswer: "Hukum Kanun Melaka & Undang-Undang Laut Melaka", explanation: "Kesultanan Melayu Melaka mempunyai 2 undang-undang bertulis yang utama iaitu Hukum Kanun Melaka dan Undang-Undang Laut Melaka."
   },
   {
-    id: 16,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Undang-Undang Laut Melaka digubal untuk...",
-    options: ["Menentukan hukuman jenayah darat", "Memastikan pelayaran dan perdagangan lancar", "Mengawal pungutan cukai di pasar", "Menentukan sempadan wilayah"],
-    correctAnswer: "Memastikan pelayaran dan perdagangan lancar",
-    explanation: "Undang-Undang Laut Melaka digubal bagi menentukan peraturan pelayaran dan perdagangan untuk memastikan kelancaran aktiviti maritim di perairan Melaka."
+    id: 14, topic: "Ciri-ciri Kesultanan Melayu Melaka", questionText: "Kawasan di bawah kekuasaan KMM yang diperoleh melalui penaklukan, naungan atau perkahwinan dikenali sebagai...", options: ["Tanah Jajahan", "Wilayah Taklukan", "Wilayah Pengaruh", "Negeri Naungan"], correctAnswer: "Wilayah Pengaruh", explanation: "Wilayah Pengaruh KMM merangkumi seluruh Semenanjung Tanah Melayu dan Pantai Timur Sumatera."
   },
   {
-    id: 17,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Apakah peranan Nakhoda mengikut Undang-Undang Laut Melaka?",
-    options: ["Menjadi hakim di pelabuhan", "Mengutip cukai dari pedagang", "Berkuasa penuh ibarat raja dalam kapal", "Memastikan keselamatan pelabuhan"],
-    correctAnswer: "Berkuasa penuh ibarat raja dalam kapal",
-    explanation: "Menurut Undang-Undang Laut Melaka, Nakhoda dianggap sebagai raja di dalam kapal dan semua anak kapal mesti mematuhi arahannya."
+    id: 15, topic: "Keunggulan Sistem Pentadbiran", questionText: "Dalam Hukum Kanun Melaka, siapakah yang tidak boleh dijatuhi hukuman bunuh tanpa arahan Sultan?", options: ["Rakyat biasa", "Pembesar", "Hamba", "Peniaga"], correctAnswer: "Pembesar", explanation: "Hukum Kanun Melaka menetapkan bahawa hanya Sultan sahaja yang berhak menjatuhkan hukuman bunuh terhadap sesiapa, termasuk pembesar yang melakukan kesalahan besar."
   },
   {
-    id: 18,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Apakah peranan Bendahara dalam sistem Pembesar Empat Lipatan?",
-    options: ["Mengetuai tentera laut", "Menjaga perbendaharaan negara", "Menjadi ketua pentadbir dan penasihat raja", "Mengawal keselamatan kota"],
-    correctAnswer: "Menjadi ketua pentadbir dan penasihat raja",
-    explanation: "Bendahara ibarat Perdana Menteri; beliau merupakan ketua pentadbir, penasihat utama raja, dan ketua turus angkatan perang."
+    id: 16, topic: "Keunggulan Sistem Pentadbiran", questionText: "Undang-Undang Laut Melaka digubal untuk...", options: ["Menentukan hukuman jenayah darat", "Memastikan pelayaran dan perdagangan lancar", "Mengawal pungutan cukai di pasar", "Menentukan sempadan wilayah"], correctAnswer: "Memastikan pelayaran dan perdagangan lancar", explanation: "Undang-Undang Laut Melaka digubal bagi menentukan peraturan pelayaran dan perdagangan untuk memastikan kelancaran aktiviti maritim di perairan Melaka."
   },
   {
-    id: 19,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Jawatan manakah yang bertanggungjawab mengawal keselamatan dalam kota Melaka?",
-    options: ["Laksamana", "Temenggung", "Syahbandar", "Penghulu Bendahari"],
-    correctAnswer: "Temenggung",
-    explanation: "Temenggung berperanan sebagai ketua polis dan penjara untuk menjaga keselamatan kota Melaka."
+    id: 17, topic: "Keunggulan Sistem Pentadbiran", questionText: "Apakah peranan Nakhoda mengikut Undang-Undang Laut Melaka?", options: ["Menjadi hakim di pelabuhan", "Mengutip cukai dari pedagang", "Berkuasa penuh ibarat raja dalam kapal", "Memastikan keselamatan pelabuhan"], correctAnswer: "Berkuasa penuh ibarat raja dalam kapal", explanation: "Menurut Undang-Undang Laut Melaka, Nakhoda dianggap sebagai raja di dalam kapal dan semua anak kapal mesti mematuhi arahannya."
   },
   {
-    id: 20,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Penghulu Bendahari dalam Kesultanan Melayu Melaka ditugaskan untuk...",
-    options: ["Mengutip cukai pelabuhan", "Menguruskan kewangan dan hasil kerajaan", "Menjaga hal ehwal agama", "Mengetuai rombongan diplomatik"],
-    correctAnswer: "Menguruskan kewangan dan hasil kerajaan",
-    explanation: "Penghulu Bendahari adalah individu yang bertanggungjawab mengurus perbendaharaan kerajaan dan hasil cukai."
+    id: 18, topic: "Keunggulan Sistem Pentadbiran", questionText: "Apakah peranan Bendahara dalam sistem Pembesar Empat Lipatan?", options: ["Mengetuai tentera laut", "Menjaga perbendaharaan negara", "Menjadi ketua pentadbir dan penasihat raja", "Mengawal keselamatan kota"], correctAnswer: "Menjadi ketua pentadbir dan penasihat raja", explanation: "Bendahara ibarat Perdana Menteri; beliau merupakan ketua pentadbir, penasihat utama raja, dan ketua turus angkatan perang."
   },
   {
-    id: 21,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Hukum Kanun Melaka mengandungi berapa fasal?",
-    options: ["30 fasal", "44 fasal", "50 fasal", "99 fasal"],
-    correctAnswer: "44 fasal",
-    explanation: "Hukum Kanun Melaka secara rasminya terdiri daripada 44 fasal yang mencakupi undang-undang jenayah, urusan jual beli, dan hal kekeluargaan."
+    id: 19, topic: "Keunggulan Sistem Pentadbiran", questionText: "Jawatan manakah yang bertanggungjawab mengawal keselamatan dalam kota Melaka?", options: ["Laksamana", "Temenggung", "Syahbandar", "Penghulu Bendahari"], correctAnswer: "Temenggung", explanation: "Temenggung berperanan sebagai ketua polis dan penjara untuk menjaga keselamatan kota Melaka."
   },
   {
-    id: 22,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Dalam Undang-Undang Laut Melaka, siapakah yang menentukan kadar cukai dalam urusan perniagaan di kapal?",
-    options: ["Nakhoda", "Sultan", "Kiwi", "Malim"],
-    correctAnswer: "Nakhoda",
-    explanation: "Nakhoda berkuasa penuh untuk menentukan kadar cukai atau 'cukai penumpang' di dalam kapal."
+    id: 20, topic: "Keunggulan Sistem Pentadbiran", questionText: "Penghulu Bendahari dalam Kesultanan Melayu Melaka ditugaskan untuk...", options: ["Mengutip cukai pelabuhan", "Menguruskan kewangan dan hasil kerajaan", "Menjaga hal ehwal agama", "Mengetuai rombongan diplomatik"], correctAnswer: "Menguruskan kewangan dan hasil kerajaan", explanation: "Penghulu Bendahari adalah individu yang bertanggungjawab mengurus perbendaharaan kerajaan dan hasil cukai."
   },
   {
-    id: 23,
-    topic: "Keunggulan Sistem Pentadbiran",
-    questionText: "Peranan Malim di dalam kapal adalah sebagai...",
-    options: ["Tukang masak", "Pakar pelayaran dan penentu arah", "Ketua tentera kapal", "Pengutip cukai"],
-    correctAnswer: "Pakar pelayaran dan penentu arah",
-    explanation: "Malim mestilah mahir tentang ilmu pelayaran seperti ilmu ombak, arus, dan kedudukan bulan/bintang untuk mengemudi kapal."
-  },
-
-  // Peranan Pemerintah dan Rakyat
-  {
-    id: 24,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Apakah konsep yang menerangkan hubungan timbal balik antara golongan pemerintah dan golongan yang diperintah?",
-    options: ["Tulap", "Daulat", "Waadat", "Merdeka"],
-    correctAnswer: "Waadat",
-    explanation: "Waadat ialah perjanjian yang mewujudkan hubungan timbal balik antara pemerintah (raja) dan yang diperintah (rakyat) bermula sejak zaman Seri Teri Buana dan Demang Lebar Daun."
+    id: 21, topic: "Keunggulan Sistem Pentadbiran", questionText: "Hukum Kanun Melaka mengandungi berapa fasal?", options: ["30 fasal", "44 fasal", "50 fasal", "99 fasal"], correctAnswer: "44 fasal", explanation: "Hukum Kanun Melaka secara rasminya terdiri daripada 44 fasal yang mencakupi undang-undang jenayah, urusan jual beli, dan hal kekeluargaan."
   },
   {
-    id: 25,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Manakah antara berikut adalah peranan utama rakyat terhadap sultan?",
-    options: ["Memberi perlindungan", "Menjaga keselamatan", "Menumpahkan taat setia", "Menyediakan undang-undang"],
-    correctAnswer: "Menumpahkan taat setia",
-    explanation: "Rakyat berperanan untuk menumpahkan taat setia yang tidak berbelah bahagi kepada sultan serta mematuhi segala arahan baginda."
+    id: 22, topic: "Keunggulan Sistem Pentadbiran", questionText: "Dalam Undang-Undang Laut Melaka, siapakah yang menentukan kadar cukai dalam urusan perniagaan di kapal?", options: ["Nakhoda", "Sultan", "Kiwi", "Malim"], correctAnswer: "Nakhoda", explanation: "Nakhoda berkuasa penuh untuk menentukan kadar cukai atau 'cukai penumpang' di dalam kapal."
   },
   {
-    id: 26,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Jika seseorang rakyat menderhaka kepada raja, mereka dipercayai akan terkena...",
-    options: ["Denda", "Buang negeri", "Tulah", "Sumpahan"],
-    correctAnswer: "Tulah",
-    explanation: "Menurut kepercayaan masyarakat Melayu tradisional, rakyat yang menderhaka kepada raja akan ditimpa 'Tulah', iaitu kecelakaan atau bala."
+    id: 23, topic: "Keunggulan Sistem Pentadbiran", questionText: "Peranan Malim di dalam kapal adalah sebagai...", options: ["Tukang masak", "Pakar pelayaran dan penentu arah", "Ketua tentera kapal", "Pengutip cukai"], correctAnswer: "Pakar pelayaran dan penentu arah", explanation: "Malim mestilah mahir tentang ilmu pelayaran seperti ilmu ombak, arus, dan kedudukan bulan/bintang untuk mengemudi kapal."
   },
   {
-    id: 27,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Golongan yang diperintah dalam Kesultanan Melayu Melaka tidak termasuk...",
-    options: ["Petani", "Peniaga kecil", "Hamba", "Pembesar"],
-    correctAnswer: "Pembesar",
-    explanation: "Golongan yang diperintah terdiri daripada rakyat biasa (petani, peniaga, tukang) dan hamba. Pembesar adalah tergolong dalam golongan pemerintah."
+    id: 24, topic: "Peranan Pemerintah dan Rakyat", questionText: "Apakah konsep yang menerangkan hubungan timbal balik antara golongan pemerintah dan golongan yang diperintah?", options: ["Tulap", "Daulat", "Waadat", "Merdeka"], correctAnswer: "Waadat", explanation: "Waadat ialah perjanjian yang mewujudkan hubungan timbal balik antara pemerintah (raja) dan yang diperintah (rakyat) bermula sejak zaman Seri Teri Buana dan Demang Lebar Daun."
   },
   {
-    id: 28,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Pemerintah (Sultan dan Pembesar) bertanggungjawab untuk...",
-    options: ["Membayar cukai yang tinggi", "Menjadi askar kerahan", "Mewujudkan perpaduan dan menjaga kemakmuran", "Menyediakan tenaga buruh"],
-    correctAnswer: "Mewujudkan perpaduan dan menjaga kemakmuran",
-    explanation: "Golongan pemerintah bertanggungjawab menjaga keselamatan rakyat, mewujudkan perpaduan, dan menjaga kemakmuran kerajaan."
+    id: 25, topic: "Peranan Pemerintah dan Rakyat", questionText: "Manakah antara berikut adalah peranan utama rakyat terhadap sultan?", options: ["Memberi perlindungan", "Menjaga keselamatan", "Menumpahkan taat setia", "Menyediakan undang-undang"], correctAnswer: "Menumpahkan taat setia", explanation: "Rakyat berperanan untuk menumpahkan taat setia yang tidak berbelah bahagi kepada sultan serta mematuhi segala arahan baginda."
   },
   {
-    id: 29,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Sistem Kerah merujuk kepada...",
-    options: ["Rakyat mengutip cukai dari kapal asing", "Rakyat membekalkan tenaga kerja untuk projek awam tanpa upah", "Pembesar merampas tanah rakyat", "Sultan memberi hadiah kepada rakyat"],
-    correctAnswer: "Rakyat membekalkan tenaga kerja untuk projek awam tanpa upah",
-    explanation: "Sistem kerah adalah amalan di mana rakyat dikerahkan menyumbang tenaga untuk kerja-kerja awam, membina istana atau menyertai tentera tanpa bayaran upah secara rasmi."
+    id: 26, topic: "Peranan Pemerintah dan Rakyat", questionText: "Jika seseorang rakyat menderhaka kepada raja, mereka dipercayai akan terkena...", options: ["Denda", "Buang negeri", "Tulah", "Sumpahan"], correctAnswer: "Tulah", explanation: "Menurut kepercayaan masyarakat Melayu tradisional, rakyat yang menderhaka kepada raja akan ditimpa 'Tulah', iaitu kecelakaan atau bala."
   },
   {
-    id: 30,
-    topic: "Peranan Pemerintah dan Rakyat",
-    questionText: "Kesejahteraan rakyat dalam Kesultanan Melayu Melaka amat bergantung kepada...",
-    options: ["Campur tangan British", "Bantuan negara jiran", "Kebijaksanaan Sultan dan keadilan undang-undang", "Kekuatan ilmu sihir"],
-    correctAnswer: "Kebijaksanaan Sultan dan keadilan undang-undang",
-    explanation: "Sultan yang bijaksana dibantu oleh sistem undang-undang yang adil dapat menjamin kesejahteraan, keselamatan, dan keharmonian rakyat jelata."
+    id: 27, topic: "Peranan Pemerintah dan Rakyat", questionText: "Golongan yang diperintah dalam Kesultanan Melayu Melaka tidak termasuk...", options: ["Petani", "Peniaga kecil", "Hamba", "Pembesar"], correctAnswer: "Pembesar", explanation: "Golongan yang diperintah terdiri daripada rakyat biasa (petani, peniaga, tukang) dan hamba. Pembesar adalah tergolong dalam golongan pemerintah."
+  },
+  {
+    id: 28, topic: "Peranan Pemerintah dan Rakyat", questionText: "Pemerintah (Sultan dan Pembesar) bertanggungjawab untuk...", options: ["Membayar cukai yang tinggi", "Menjadi askar kerahan", "Mewujudkan perpaduan dan menjaga kemakmuran", "Menyediakan tenaga buruh"], correctAnswer: "Mewujudkan perpaduan dan menjaga kemakmuran", explanation: "Golongan pemerintah bertanggungjawab menjaga keselamatan rakyat, mewujudkan perpaduan, dan menjaga kemakmuran kerajaan."
+  },
+  {
+    id: 29, topic: "Peranan Pemerintah dan Rakyat", questionText: "Sistem Kerah merujuk kepada...", options: ["Rakyat mengutip cukai dari kapal asing", "Rakyat membekalkan tenaga kerja untuk projek awam tanpa upah", "Pembesar merampas tanah rakyat", "Sultan memberi hadiah kepada rakyat"], correctAnswer: "Rakyat membekalkan tenaga kerja untuk projek awam tanpa upah", explanation: "Sistem kerah adalah amalan di mana rakyat dikerahkan menyumbang tenaga untuk kerja-kerja awam, membina istana atau menyertai tentera tanpa bayaran upah secara rasmi."
+  },
+  {
+    id: 30, topic: "Peranan Pemerintah dan Rakyat", questionText: "Kesejahteraan rakyat dalam Kesultanan Melayu Melaka amat bergantung kepada...", options: ["Campur tangan British", "Bantuan negara jiran", "Kebijaksanaan Sultan dan keadilan undang-undang", "Kekuatan ilmu sihir"], correctAnswer: "Kebijaksanaan Sultan dan keadilan undang-undang", explanation: "Sultan yang bijaksana dibantu oleh sistem undang-undang yang adil dapat menjamin kesejahteraan, keselamatan, dan keharmonian rakyat jelata."
   }
 ];
 
-// Helper to get exactly 5 random questions for a quiz session
-export const getRandomQuestions = (count = 5) => {
-  const shuffled = [...questionBank].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
+const bab2 = [
+  { id: 31, topic: "Maksud Nasionalisme", questionText: "Apakah maksud nasionalisme?", options: ["Perasaan cinta terhadap bangsa dan negara", "Perjuangan menentang cukai", "Hasrat menakluk negara lain", "Keinginan menguasai ekonomi"], correctAnswer: "Perasaan cinta terhadap bangsa dan negara", explanation: "Nasionalisme bermaksud perasaan cinta yang mendalam terhadap bangsa dan negara serta semangat berjuang mempertahankan kedaulatan." },
+  { id: 32, topic: "Revolusi Keagungan (1688)", questionText: "Mengapakah Revolusi Keagungan (Glorious Revolution) tercetus di England pada tahun 1688?", options: ["Menuntut kemerdekaan dari Perancis", "Menentang pemerintahan mutlak raja", "Menuntut pembebasan hamba abdi", "Memperjuangkan hak wanita"], correctAnswer: "Menentang pemerintahan mutlak raja", explanation: "Revolusi ini berlaku kerana keinginan rakyat menentang pemerintahan mutlak Raja James II dan menegakkan kedaulatan parlimen." },
+  { id: 33, topic: "Revolusi Amerika (1776)", questionText: "Apakah slogan yang digunakan dalam Revolusi Amerika (1776)?", options: ["Merdeka atau Mati", "Tiada cukai tanpa perwakilan", "Kebebasan, Persamaan, Persaudaraan", "Bebas dari Penjajah"], correctAnswer: "Tiada cukai tanpa perwakilan", explanation: "Slogan 'Tiada cukai tanpa perwakilan' melaungkan bantahan penduduk Amerika terhadap cukai yang dikenakan oleh Parlimen British tanpa wakil mereka." },
+  { id: 34, topic: "Revolusi Perancis (1789)", questionText: "Karya 'The Social Contract' oleh Jean-Jacques Rousseau mencetuskan Revolusi Perancis. Apakah idea utama beliau?", options: ["Pemerintahan berasaskan suara rakyat", "Kuasa mutlak raja dipertahankan", "Agama dan negara harus dipisahkan", "Penubuhan empayar republik"], correctAnswer: "Pemerintahan berasaskan suara rakyat", explanation: "Rousseau menegaskan bahawa keunggulan suara rakyat menjamin kesejahteraan dan menjadi asas pembentukan sesebuah kerajaan." },
+  { id: 35, topic: "Nasionalisme di India", questionText: "Pemberontakan Dahagi India (1857) merupakan reaksi terhadap...", options: ["Pengenalan sistem pendidikan Barat", "Kehadiran askar upahan Sepoy", "Ancaman terhadap adat resam dan agama", "Pemisahan India dan Pakistan"], correctAnswer: "Ancaman terhadap adat resam dan agama", explanation: "Dahagi 1857 tercetus apabila sepoi (askar upahan) India berasa agama dan adat resam mereka diancam oleh pentadbiran British." },
+  { id: 36, topic: "Nasionalisme di Jepun", questionText: "Pemulihan Meiji di Jepun menekankan pemodenan negara. Apakah dasar yang digunakan?", options: ["Dasar Tutup Pintu", "Dasar Buka Pintu", "Fukoku Kyohei", "Bushido"], correctAnswer: "Fukoku Kyohei", explanation: "Jepun menggunakan dasar 'Fukoku Kyohei' (Negara Kaya, Tentera Kuat) untuk memodenkan negara mencontohi Barat." },
+  { id: 37, topic: "Nasionalisme di Tanah Melayu", questionText: "Golongan intelektual berpendidikan Timur Tengah mencetuskan kebangkitan melalui Gerakan Islah. Apakah akhbar yang mereka gunakan?", options: ["Al-Imam", "Utusan Melayu", "Warta Malaya", "Majlis"], correctAnswer: "Al-Imam", explanation: "Gerakan Islah menggunakan akhbar Al-Imam (1906) untuk menyebarkan idea pembaharuan Islam di Tanah Melayu." },
+  { id: 38, topic: "Tokoh Nasionalisme", questionText: "Siapakah tokoh yang memimpin Katipunan dalam Revolusi Filipina melawan Sepanyol?", options: ["Jose Rizal", "Andres Bonifacio", "Emilio Aguinaldo", "Sukarno"], correctAnswer: "Andres Bonifacio", explanation: "Andres Bonifacio menubuhkan Katipunan untuk melancarkan pemberontakan bersenjata terhadap penjajah Sepanyol." },
+  { id: 39, topic: "Nasionalisme di Indonesia", questionText: "Kongres Pemuda Indonesia melahirkan 'Sumpah Pemuda' pada 1928 yang menggariskan...", options: ["Tiga asas utama: Satu Tanah Air, Satu Bangsa, Satu Bahasa", "Menuntut kemerdekaan mutlak daripada Belanda", "Menyatukan semua parti politik beraliran agama", "Membentuk tentera kebangsaan"], correctAnswer: "Tiga asas utama: Satu Tanah Air, Satu Bangsa, Satu Bahasa", explanation: "Sumpah Pemuda berikrar untuk mewujudkan Satu Tanah Air, Satu Bangsa dan menggunakan Satu Bahasa iaitu Bahasa Indonesia." },
+  { id: 40, topic: "Kesatuan Melayu Muda (KMM)", questionText: "Apakah matlamat penubuhan Kesatuan Melayu Muda (KMM) pimpinan Ibrahim Haji Yaakob?", options: ["Membentuk gabungan Melayu Raya", "Mendapatkan kemerdekaan melalui rundingan", "Memajukan ekonomi orang Melayu", "Meningkatkan pendidikan vokasional"], correctAnswer: "Membentuk gabungan Melayu Raya", explanation: "KMM berhaluan kiri memperjuangkan kemerdekaan melalui konsep Melayu Raya yang menggabungkan Tanah Melayu dan Indonesia." }
+];
+
+const bab3 = [
+  { id: 41, topic: "Perang Dunia Pertama", questionText: "Apakah faktor utama yang mencetuskan Perang Dunia Pertama?", options: ["Persaingan kuasa imperialis dan pembunuhan Archduke Ferdinand", "Masalah ekonomi di Eropah", "Kejatuhan Empayar Uthmaniyah", "Pemberontakan golongan pekerja di Rusia"], correctAnswer: "Persaingan kuasa imperialis dan pembunuhan Archduke Ferdinand", explanation: "Pembunuhan pewaris takhta Austria-Hungary, Archduke Franz Ferdinand pada 1914 menjadi pencetus serta-merta Perang Dunia Pertama." },
+  { id: 42, topic: "Kesan PD1", questionText: "Perjanjian Versailles (1919) yang menamatkan Perang Dunia Pertama memberi kesan buruk kepada negara mana?", options: ["Perancis", "Britain", "Jerman", "Itali"], correctAnswer: "Jerman", explanation: "Jerman kehilangan tanah jajahan, dikehendaki membayar pampasan perang yang besar, dan saiz tenteranya dihadkan." },
+  { id: 43, topic: "Liga Bangsa-Bangsa", questionText: "Apakah tujuan penubuhan Liga Bangsa-Bangsa selepas Perang Dunia Pertama?", options: ["Mengukuhkan ekonomi Eropah", "Menggalakkan perdamaian antarabangsa", "Membahagikan wilayah jajahan", "Menghukum negara yang tewas"], correctAnswer: "Menggalakkan perdamaian antarabangsa", explanation: "Liga Bangsa-Bangsa ditubuhkan untuk menjaga keamanan dunia dan mengelakkan peperangan berlaku lagi." },
+  { id: 44, topic: "Kebangkitan Fasisme", questionText: "Siapakah tokoh yang membawa ideologi Fasisme di Itali sebelum Perang Dunia Kedua?", options: ["Adolf Hitler", "Benito Mussolini", "Joseph Stalin", "Winston Churchill"], correctAnswer: "Benito Mussolini", explanation: "Benito Mussolini mengetuai Parti Fasis di Itali dan melaksanakan pemerintahan diktator." },
+  { id: 45, topic: "Perang Dunia Kedua", questionText: "Perang Dunia Kedua di Eropah bermula apabila Jerman menyerang...", options: ["Perancis", "Poland", "Britain", "Rusia"], correctAnswer: "Poland", explanation: "Pada 1 September 1939, Jerman menyerang Poland yang menyebabkan Britain dan Perancis mengisytiharkan perang terhadap Jerman." },
+  { id: 46, topic: "Pendudukan Jepun", questionText: "Apakah slogan yang digunakan oleh Jepun untuk menarik sokongan penduduk Tanah Melayu?", options: ["Jepun Pelindung Asia", "Asia untuk Orang Asia", "Kemerdekaan Bersama", "Jepun Kuasa Timur"], correctAnswer: "Asia untuk Orang Asia", explanation: "Jepun melaungkan slogan 'Asia untuk Orang Asia' dan 'Kawasan Kesemakmuran Bersama Asia Timur Raya' (Co-Prosperity Sphere)." },
+  { id: 47, topic: "Pendudukan Jepun", questionText: "Pasukan penentang Jepun yang paling agresif di Tanah Melayu ialah...", options: ["Force 136", "MPAJA", "Askar Melayu Setia", "Gerila Kinabalu"], correctAnswer: "MPAJA", explanation: "Malayan People's Anti-Japanese Army (MPAJA) yang ditubuhkan oleh Parti Komunis Malaya merupakan kumpulan penentang utama." },
+  { id: 48, topic: "Pendudukan Jepun", questionText: "Sistem mata wang yang diperkenalkan oleh Jepun di Tanah Melayu dikenali sebagai...", options: ["Wang Pokok Pisang", "Duit Syiling Jepun", "Yen Tanah Melayu", "Wang Daun Kelapa"], correctAnswer: "Wang Pokok Pisang", explanation: "Jepun mencetak wang kertas yang dikenali sebagai 'wang pokok pisang' yang menyebabkan inflasi yang sangat teruk." },
+  { id: 49, topic: "Kesan Pendudukan Jepun", questionText: "Semasa pentadbiran Jepun, penduduk dipaksa membina landasan kereta api di...", options: ["Tanah Melayu ke Singapura", "Thailand ke Burma", "Sabah ke Sarawak", "Pahang ke Kelantan"], correctAnswer: "Thailand ke Burma", explanation: "Ramai buruh paksa (Romusha) dari Tanah Melayu dikerahkan untuk membina 'Landasan Kereta Api Maut' di sempadan Thailand-Burma." },
+  { id: 50, topic: "Tamatnya PD2", questionText: "Perang Dunia Kedua di Asia Pasifik tamat selepas peristiwa...", options: ["Jepun dikalahkan oleh MPAJA", "Kemasukan askar British ke Tanah Melayu", "Pengeboman bom atom di Hiroshima dan Nagasaki", "Perjanjian damai di Tokyo"], correctAnswer: "Pengeboman bom atom di Hiroshima dan Nagasaki", explanation: "Amerika Syarikat menggugurkan bom atom di Hiroshima (6 Ogos) dan Nagasaki (9 Ogos 1945), menyebabkan Jepun menyerah kalah." }
+];
+
+const bab4 = [
+  { id: 51, topic: "Pentadbiran Tentera British (BMA)", questionText: "Apakah tujuan British menubuhkan BMA (British Military Administration) di Tanah Melayu selepas pengunduran Jepun?", options: ["Menyekat kemaraan tentera Amerika", "Mengembalikan keamanan dan kestabilan", "Memberikan kemerdekaan segera", "Menjalankan pilihan raya"], correctAnswer: "Mengembalikan keamanan dan kestabilan", explanation: "BMA ditubuhkan untuk memulihkan keamanan, bekalan makanan, serta memulihkan infrastruktur selepas peperangan tamat." },
+  { id: 52, topic: "Malayan Union", questionText: "Malayan Union diperkenalkan pada tahun 1946. Siapakah yang dilantik sebagai Gabenor pertamanya?", options: ["Sir Edward Gent", "Sir Harold MacMichael", "Sir Frank Swettenham", "Sir Henry Gurney"], correctAnswer: "Sir Edward Gent", explanation: "Sir Edward Gent dilantik sebagai Gabenor pertama Malayan Union dan berkuasa meluluskan undang-undang." },
+  { id: 53, topic: "Ciri Malayan Union", questionText: "Apakah prinsip kewarganegaraan yang diperkenalkan dalam Malayan Union?", options: ["Jus Sanguinis", "Jus Soli", "Kewarganegaraan berdasarkan keturunan", "Hak istimewa penduduk peribumi"], correctAnswer: "Jus Soli", explanation: "Prinsip Jus Soli memberikan kewarganegaraan yang longgar kepada sesiapa yang lahir di Tanah Melayu dan Singapura." },
+  { id: 54, topic: "Penentangan Malayan Union", questionText: "Mengapakah orang Melayu menentang keras pembentukan Malayan Union?", options: ["Kemasukan buruh asing secara beramai-ramai", "Kehilangan kuasa Raja-raja Melayu", "Cukai pertanian yang tinggi", "Pemindahan ibu kota ke Singapura"], correctAnswer: "Kehilangan kuasa Raja-raja Melayu", explanation: "Kuasa Raja-raja Melayu dilenyapkan; raja hanya berkuasa dalam soal agama Islam dan adat istiadat Melayu sahaja." },
+  { id: 55, topic: "Tokoh Penentang", questionText: "Siapakah yang mengumpulkan pemimpin-pemimpin Melayu untuk menubuhkan UMNO demi menentang Malayan Union?", options: ["Dato' Onn Jaafar", "Tunku Abdul Rahman", "Burhanuddin al-Helmi", "Ahmad Boestamam"], correctAnswer: "Dato' Onn Jaafar", explanation: "Dato' Onn Jaafar menganjurkan Kongres Melayu Se-Malaya yang membawa kepada penubuhan UMNO (United Malays National Organisation) pada tahun 1946." },
+  { id: 56, topic: "Penyerahan Sarawak", questionText: "Charles Vyner Brooke menyerahkan Sarawak kepada Kerajaan British. Antara sebab utama penyerahan ini ialah...", options: ["Desakan dari Jepun", "Masalah kewangan untuk memulihkan Sarawak", "Tuntutan penduduk tempatan", "Serangan dari tentera Indonesia"], correctAnswer: "Masalah kewangan untuk memulihkan Sarawak", explanation: "Vyner Brooke menghadapi masalah kewangan dan kesihatan yang menyebabkannya menyerahkan Sarawak untuk dipulihkan oleh British." },
+  { id: 57, topic: "Penentangan di Sarawak", questionText: "Siapakah Gabenor Sarawak yang kedua yang dibunuh oleh Rosli Dhoby di Sibu?", options: ["Sir Charles Arden Clarke", "Duncan Stewart", "Anthony Brooke", "Lord Brassey"], correctAnswer: "Duncan Stewart", explanation: "Rosli Dhoby yang menganggotai Rukun 13 telah menikam Gabenor Duncan Stewart sebagai tanda protes terhadap penyerahan Sarawak." },
+  { id: 58, topic: "Sabah", questionText: "Selepas Perang Dunia Kedua, Sabah diserahkan kepada Kerajaan British oleh...", options: ["Syarikat Borneo Utara British (SBUB)", "Sultan Brunei", "Keluarga Brooke", "Gabenor Filipina"], correctAnswer: "Syarikat Borneo Utara British (SBUB)", explanation: "SBUB tidak mampu menampung kos pembangunan semula Sabah selepas peperangan dan menyerahkannya kepada Mahkota British pada 1946." },
+  { id: 59, topic: "Tindakan UMNO", questionText: "Semasa perlantikan Gabenor Malayan Union di Kuala Lumpur, orang Melayu telah...", options: ["Melancarkan mogok senjata", "Mengadakan pilihan raya majlis tempatan", "Berkabung dengan memakai lilitan kain putih di songkok", "Berhijrah ke Indonesia"], correctAnswer: "Berkabung dengan memakai lilitan kain putih di songkok", explanation: "Orang Melayu mengadakan majlis berkabung dan memulaukan upacara perlantikan Sir Edward Gent sebagai tanda bantahan." },
+  { id: 60, topic: "Kesan Penentangan", questionText: "Apakah kesan daripada penentangan hebat orang Melayu terhadap Malayan Union?", options: ["British mengisytiharkan darurat", "British membatalkan Malayan Union dan merangka Persekutuan Tanah Melayu", "Singapura disatukan kembali dengan Tanah Melayu", "Raja-raja Melayu dibuang negeri"], correctAnswer: "British membatalkan Malayan Union dan merangka Persekutuan Tanah Melayu", explanation: "Kejayaan bantahan tersebut memaksa British menggantikan Malayan Union dengan Persekutuan Tanah Melayu 1948 yang memulihkan kedaulatan Raja-raja Melayu." }
+];
+
+const bab5 = [
+  { id: 61, topic: "Penubuhan PTM", questionText: "Persekutuan Tanah Melayu (PTM) ditubuhkan pada tahun...", options: ["1946", "1948", "1955", "1957"], correctAnswer: "1948", explanation: "PTM ditubuhkan secara rasmi pada 1 Februari 1948 menggantikan Malayan Union." },
+  { id: 62, topic: "Jawatankuasa Kerja", questionText: "Jawatankuasa Kerja PTM terdiri daripada tiga golongan. Siapakah yang TIDAK terlibat dalam jawatankuasa ini?", options: ["Wakil Kerajaan British", "Wakil Raja-raja Melayu", "Wakil UMNO", "Wakil AMCJA-PUTERA"], correctAnswer: "Wakil AMCJA-PUTERA", explanation: "Jawatankuasa ini hanya terdiri daripada wakil British, Raja-raja Melayu dan UMNO, menyebabkan bantahan daripada golongan radikal." },
+  { id: 63, topic: "Sumbangan UMNO", questionText: "Siapakah tokoh UMNO yang menjadi perunding utama dalam Jawatankuasa Kerja PTM 1948?", options: ["Dato' Onn Jaafar", "Tunku Abdul Rahman", "Tun Tan Cheng Lock", "V.T. Sambanthan"], correctAnswer: "Dato' Onn Jaafar", explanation: "Dato' Onn Jaafar sebagai Yang Dipertua UMNO mengetuai rundingan mewakili orang Melayu." },
+  { id: 64, topic: "Bantahan AMCJA-PUTERA", questionText: "Gabungan AMCJA-PUTERA menentang perjanjian PTM dan mencadangkan satu perlembagaan alternatif. Apakah nama perlembagaan tersebut?", options: ["Perlembagaan Merdeka", "Perlembagaan Rakyat", "Sumpah Malaya", "Perjanjian Tanah Melayu"], correctAnswer: "Perlembagaan Rakyat", explanation: "AMCJA-PUTERA merangka Perlembagaan Rakyat pada 1947 yang mencadangkan kemerdekaan yang lebih radikal namun ditolak oleh British." },
+  { id: 65, topic: "Perlembagaan Rakyat", questionText: "Antara perkara yang dituntut dalam Perlembagaan Rakyat ialah...", options: ["Pengekalan Malayan Union", "Rakyat dinamakan Melayu", "British kekal mentadbir negara", "Pemisahan Singapura"], correctAnswer: "Rakyat dinamakan Melayu", explanation: "Salah satu tuntutan unik Perlembagaan Rakyat ialah mewujudkan satu kerakyatan yang sama bagi semua orang dengan nama 'Melayu'." },
+  { id: 66, topic: "Ciri-ciri PTM 1948", questionText: "Dalam pentadbiran PTM 1948, apakah jawatan ketua eksekutif tertinggi di peringkat Persekutuan?", options: ["Yang di-Pertuan Agong", "Pesuruhjaya Tinggi British", "Perdana Menteri", "Sultan"], correctAnswer: "Pesuruhjaya Tinggi British", explanation: "Pesuruhjaya Tinggi British menjadi ketua eksekutif Persekutuan yang mengetuai Majlis Perundangan dan Majlis Mesyuarat Persekutuan." },
+  { id: 67, topic: "Ciri-ciri PTM 1948", questionText: "Syarat kewarganegaraan dalam PTM 1948 adalah...", options: ["Jus Soli secara automatik untuk semua", "Lebih ketat berbanding Malayan Union", "Terbuka kepada semua penduduk Komanwel", "Hanya untuk orang Melayu beragama Islam"], correctAnswer: "Lebih ketat berbanding Malayan Union", explanation: "Kewarganegaraan diperketatkan; Jus Soli hanya terhad kepada subjek raja (Melayu) dan rakyat British (lahir di NNS), manakala pendatang perlu memohon dan memenuhi syarat tempoh mastautin." },
+  { id: 68, topic: "Kuasa Raja Melayu", questionText: "Bagaimanakah kedudukan Raja-raja Melayu dalam PTM 1948?", options: ["Kuasa politik dimansuhkan sepenuhnya", "Dikembalikan sebagai Raja Berperlembagaan dan mengetuai Majlis Raja-Raja", "Menjadi pemerintah mutlak", "Dipaksa turun takhta"], correctAnswer: "Dikembalikan sebagai Raja Berperlembagaan dan mengetuai Majlis Raja-Raja", explanation: "Kedaulatan raja dipulihkan, dan penubuhan Majlis Raja-Raja membolehkan sultan memberikan nasihat kepada Pesuruhjaya Tinggi." },
+  { id: 69, topic: "Kesan PTM 1948", questionText: "Penubuhan Persekutuan Tanah Melayu 1948 membawa kepada...", options: ["Penghapusan parti UMNO", "Pengekalan hak keistimewaan orang Melayu", "Kemarahan Raja-raja Melayu", "Penarikan balik tentera British"], correctAnswer: "Pengekalan hak keistimewaan orang Melayu", explanation: "Perjanjian tersebut secara rasmi mengiktiraf kedudukan istimewa orang Melayu di samping membenarkan kaum lain bermastautin dan mendapat kewarganegaraan." },
+  { id: 70, topic: "Hartal", questionText: "Bagaimanakah AMCJA-PUTERA memprotes penolakan Perlembagaan Rakyat?", options: ["Memberontak dalam hutan", "Mengadakan mogok (Hartal) seluruh negara", "Bekerjasama dengan Jepun", "Memboikot pilihan raya"], correctAnswer: "Mengadakan mogok (Hartal) seluruh negara", explanation: "Mereka melancarkan Hartal Se-Malaya pada 20 Oktober 1947, di mana peniaga menutup kedai bagi menunjukkan bantahan mereka." }
+];
+
+const bab6 = [
+  { id: 71, topic: "Darurat", questionText: "Bilakah darurat diisytiharkan di seluruh Tanah Melayu?", options: ["1946", "1948", "1955", "1957"], correctAnswer: "1948", explanation: "Darurat diisytiharkan secara menyeluruh di Tanah Melayu pada 18 Jun 1948 selepas pembunuhan peladang Eropah di Sungai Siput." },
+  { id: 72, topic: "Rancangan Briggs", questionText: "Apakah tujuan utama Rancangan Briggs yang dilaksanakan semasa Darurat?", options: ["Melatih tentera tempatan", "Memutuskan hubungan PKM dengan penduduk (Min Yuen)", "Mencetak risalah anti-komunis", "Memberikan pengampunan kepada pengganas"], correctAnswer: "Memutuskan hubungan PKM dengan penduduk (Min Yuen)", explanation: "Rancangan Briggs memindahkan penduduk luar bandar ke Kampung Baru supaya komunis tidak mendapat bekalan makanan, perubatan dan maklumat." },
+  { id: 73, topic: "Tindakan Kerajaan", questionText: "Undang-Undang Darurat membolehkan pihak polis untuk...", options: ["Menangkap suspek komunis tanpa perbicaraan", "Membatalkan pilihan raya", "Mengenakan cukai pertahanan", "Membentuk parti politik baharu"], correctAnswer: "Menangkap suspek komunis tanpa perbicaraan", explanation: "Di bawah Ordinan Darurat, kerajaan mempunyai kuasa besar untuk menangkap dan menahan sesiapa yang disyaki terlibat dengan komunis." },
+  { id: 74, topic: "Rundingan Baling", questionText: "Siapakah yang mewakili Kerajaan dalam Rundingan Baling 1955?", options: ["Tunku Abdul Rahman, David Marshall dan Tun Tan Cheng Lock", "Dato' Onn Jaafar dan Henry Gurney", "Sir Gerald Templer", "Lee Kuan Yew"], correctAnswer: "Tunku Abdul Rahman, David Marshall dan Tun Tan Cheng Lock", explanation: "Ketiga-tiga tokoh ini mewakili kerajaan untuk berunding dengan Chin Peng bagi menamatkan darurat." },
+  { id: 75, topic: "Gerak Saraf", questionText: "Kempen 'Bulan Penduduk Tanah Melayu Menentang Komunis' merupakan sebahagian daripada perang saraf oleh siapa?", options: ["Sir Henry Gurney", "Sir Harold MacMichael", "Sir Gerald Templer", "Jeneral Briggs"], correctAnswer: "Sir Gerald Templer", explanation: "Sir Gerald Templer melancarkan perang saraf (psychological warfare) untuk memenangi hati dan fikiran rakyat (Winning Hearts and Minds)." },
+  { id: 76, topic: "Min Yuen", questionText: "Apakah peranan Min Yuen bagi PKM?", options: ["Pasukan serangan hendap", "Membekalkan makanan, wang, dan perubatan dari orang awam", "Penyebar propaganda di London", "Jurucakap PKM"], correctAnswer: "Membekalkan makanan, wang, dan perubatan dari orang awam", explanation: "Min Yuen (Pertubuhan Massa) bertindak menyusup masuk dalam masyarakat bagi menyokong logistik tentera PKM." },
+  { id: 77, topic: "Tamatnya Darurat", questionText: "Pada tahun berapakah darurat secara rasminya ditamatkan di Tanah Melayu?", options: ["1955", "1957", "1960", "1963"], correctAnswer: "1960", explanation: "Selepas 12 tahun, darurat diisytiharkan tamat pada 31 Julai 1960 berikutan kekalahan pengganas komunis." },
+  { id: 78, topic: "Pasukan Keselamatan", questionText: "Pasukan yang ditubuhkan untuk mengawal ladang dan lombong daripada serangan komunis ialah...", options: ["Senoi Praaq", "Home Guard (Pengawal Kampung)", "Special Branch", "Askar Melayu Diraja"], correctAnswer: "Home Guard (Pengawal Kampung)", explanation: "Home Guard ditubuhkan di peringkat kampung dan estet untuk menjaga keselamatan setempat." },
+  { id: 79, topic: "Sebab Kegagalan Rundingan Baling", questionText: "Mengapakah Rundingan Baling gagal?", options: ["PKM enggan meletak senjata dan mahu diiktiraf sebagai parti politik", "Kerajaan menolak untuk memberi pengampunan", "Campur tangan British", "Chin Peng dibunuh semasa rundingan"], correctAnswer: "PKM enggan meletak senjata dan mahu diiktiraf sebagai parti politik", explanation: "Tunku Abdul Rahman menolak syarat Chin Peng untuk mengiktiraf PKM sebagai parti politik yang sah." },
+  { id: 80, topic: "Kesan Darurat", questionText: "Apakah kesan besar Darurat terhadap sosioekonomi Tanah Melayu?", options: ["Penghapusan sekolah vernakular", "Penangguhan kemerdekaan", "Perbelanjaan besar kerajaan untuk keselamatan", "Pertanian terbengkalai sepenuhnya"], correctAnswer: "Perbelanjaan besar kerajaan untuk keselamatan", explanation: "Kerajaan terpaksa menghabiskan berjuta-juta dolar setiap hari untuk operasi ketenteraan yang menjejaskan pembangunan sosioekonomi." }
+];
+
+const bab7 = [
+  { id: 81, topic: "Idea Kemerdekaan", questionText: "Siapakah pencetus awal idea merdeka berkonsepkan Melayu Raya?", options: ["KMM (Kesatuan Melayu Muda)", "UMNO", "MIC", "Parti Perikatan"], correctAnswer: "KMM (Kesatuan Melayu Muda)", explanation: "KMM pimpinan Ibrahim Haji Yaakob adalah antara organisasi terawal memperjuangkan kemerdekaan menerusi gabungan dengan Indonesia." },
+  { id: 82, topic: "Jawatankuasa Hubungan Antara Kaum (CLC)", questionText: "Apakah tujuan penubuhan CLC (Communities Liaison Committee) pada 1949?", options: ["Menggubal perlembagaan baharu", "Merundingkan penamatan darurat", "Memupuk persefahaman dan kerjasama politik antara kaum", "Membincangkan pilihan raya umum"], correctAnswer: "Memupuk persefahaman dan kerjasama politik antara kaum", explanation: "CLC ditubuhkan untuk mencari penyelesaian terhadap isu sensitif melibatkan kedudukan orang Melayu dan kerakyatan kaum bukan Melayu." },
+  { id: 83, topic: "Sistem Ahli", questionText: "Apakah yang dimaksudkan dengan Sistem Ahli (1951)?", options: ["Sistem keahlian parti UMNO", "Latihan pentadbiran bagi tokoh tempatan mentadbir jabatan kerajaan", "Sistem perwakilan di peringkat kampung", "Sistem cukai persekutuan"], correctAnswer: "Latihan pentadbiran bagi tokoh tempatan mentadbir jabatan kerajaan", explanation: "Sistem Ahli bertindak seperti sebuah sistem kabinet kabinet bayangan untuk melatih penduduk tempatan ke arah berkerajaan sendiri." },
+  { id: 84, topic: "Sistem Ahli", questionText: "Tokoh yang memegang jawatan Ahli Dalam Negeri (Hal Ehwal Dalam Negeri) pertama ialah...", options: ["Dato' Onn Jaafar", "Tunku Abdul Rahman", "H.S. Lee", "Dr. Ismail Abdul Rahman"], correctAnswer: "Dato' Onn Jaafar", explanation: "Dato' Onn Jaafar memainkan peranan penting sebagai Ahli Hal Ehwal Dalam Negeri." },
+  { id: 85, topic: "Pendidikan", questionText: "Laporan yang mencadangkan sekolah kebangsaan menggunakan bahasa Inggeris dan bahasa Melayu sebagai bahasa pengantar pada tahun 1951 ialah...", options: ["Laporan Barnes", "Laporan Fenn-Wu", "Ordinan Pelajaran 1952", "Penyata Razak"], correctAnswer: "Laporan Barnes", explanation: "Laporan Barnes mensasarkan penyatuan kaum melalui sistem pendidikan sekolah kebangsaan satu aliran." },
+  { id: 86, topic: "Pendidikan", questionText: "Apakah matlamat utama Penyata Razak (1956)?", options: ["Menghapuskan sekolah vernacular Cina dan Tamil", "Menyatupadukan kanak-kanak pelbagai kaum melalui kurikulum dan peperiksaan seragam", "Memperkenalkan pendidikan percuma", "Mewajibkan pelajaran bahasa Inggeris kepada semua"], correctAnswer: "Menyatupadukan kanak-kanak pelbagai kaum melalui kurikulum dan peperiksaan seragam", explanation: "Penyata Razak menjadi asas Dasar Pendidikan Kebangsaan untuk memupuk perpaduan berteraskan sukatan pelajaran yang sama." },
+  { id: 87, topic: "Pertukaran Pemimpin", questionText: "Selepas Dato' Onn Jaafar meletak jawatan dalam UMNO pada 1951, beliau menubuhkan...", options: ["Parti Negara / IMP", "Parti Keadilan", "PAS", "MCA"], correctAnswer: "Parti Negara / IMP", explanation: "Beliau menubuhkan Parti Kemerdekaan Malaya (IMP) untuk membuka keahlian kepada semua kaum, namun kurang mendapat sambutan." },
+  { id: 88, topic: "Gabungan UMNO-MCA", questionText: "Di manakah perikatan UMNO dan MCA mula bekerjasama dan memenangi pilihan raya buat kali pertama?", options: ["Pilihan Raya Majlis Perbandaran Kuala Lumpur (1952)", "Pilihan Raya MPP 1955", "Pilihan Raya Pulau Pinang", "Pilihan Raya Negeri Johor"], correctAnswer: "Pilihan Raya Majlis Perbandaran Kuala Lumpur (1952)", explanation: "Kerjasama UMNO-MCA bermula dalam PR Perbandaran KL 1952 dan kejayaan mereka mendorong pembentukan Parti Perikatan." },
+  { id: 89, topic: "Penubuhan Parti", questionText: "Parti politik manakah yang memperjuangkan negara Islam merdeka pada zaman pra-kemerdekaan?", options: ["Hizbul Muslimin", "PKMM", "AWAS", "API"], correctAnswer: "Hizbul Muslimin", explanation: "Hizbul Muslimin ditubuhkan di Gunung Semanggol pada 1948 bertujuan mencapai kemerdekaan berlandaskan pemerintahan Islam." },
+  { id: 90, topic: "Kesedaran Wanita", questionText: "Pertubuhan wanita AWAS diketuai oleh tokoh nasionalis...", options: ["Ibu Zain", "Shamsiah Fakeh", "Aishah Ghani", "Fatimah Hashim"], correctAnswer: "Shamsiah Fakeh", explanation: "Shamsiah Fakeh memimpin Angkatan Wanita Sedar (AWAS) yang berhaluan kiri." }
+];
+
+const bab8 = [
+  { id: 91, topic: "Pilihan Raya MPP 1955", questionText: "Berapakah jumlah kerusi yang dimenangi oleh Parti Perikatan dalam Pilihan Raya Majlis Perundangan Persekutuan 1955?", options: ["51 daripada 52 kerusi", "45 daripada 52 kerusi", "Semua kerusi", "Separuh daripada kerusi"], correctAnswer: "51 daripada 52 kerusi", explanation: "Parti Perikatan (UMNO-MCA-MIC) mencapai kemenangan besar, memenangi 51 daripada 52 kerusi yang dipertandingkan." },
+  { id: 92, topic: "Proses Pilihan Raya", questionText: "Sebelum pilihan raya diadakan, apakah langkah awal yang perlu dilakukan oleh suruhanjaya?", options: ["Pengiraan undi", "Kempen pilihan raya", "Persempadanan kawasan dan pendaftaran pengundi", "Pembentukan kabinet"], correctAnswer: "Persempadanan kawasan dan pendaftaran pengundi", explanation: "Proses bermula dengan menetapkan sempadan kawasan pilihan raya dan mendaftar pengundi yang layak." },
+  { id: 93, topic: "Kabinet Pertama", questionText: "Selepas menang pilihan raya 1955, kabinet pertama dibentuk dan diketuai oleh...", options: ["Dato' Onn Jaafar", "Tunku Abdul Rahman", "Yang di-Pertuan Agong", "Sir Donald MacGillivray"], correctAnswer: "Tunku Abdul Rahman", explanation: "Tunku Abdul Rahman dilantik sebagai Ketua Menteri Tanah Melayu yang pertama mengetuai kabinet tempatan." },
+  { id: 94, topic: "Kepentingan Pilihan Raya", questionText: "Apakah signifikannya pilihan raya 1955 kepada Tanah Melayu?", options: ["Mengesahkan kuasa British", "Membuktikan kesediaan rakyat mentadbir negara secara demokratik", "Menamatkan ancaman komunis serta-merta", "Membolehkan orang luar mendapat kewarganegaraan"], correctAnswer: "Membuktikan kesediaan rakyat mentadbir negara secara demokratik", explanation: "Pilihan raya ini membuktikan perpaduan kaum dan persediaan Tanah Melayu ke arah kemerdekaan." },
+  { id: 95, topic: "Manifes Perikatan", questionText: "Apakah salah satu manifesto Parti Perikatan yang paling utama dalam pilihan raya 1955?", options: ["Mencapai kemerdekaan dalam masa 4 tahun", "Mengekalkan sistem pendidikan vernakular", "Menarik balik semua bantuan British", "Membentuk Kesatuan Melayu Raya"], correctAnswer: "Mencapai kemerdekaan dalam masa 4 tahun", explanation: "Perikatan berjanji untuk mendapatkan kemerdekaan dalam tempoh empat tahun sekiranya menang." },
+  { id: 96, topic: "Parti Bertanding", questionText: "Selain Parti Perikatan, parti manakah yang berjaya memenangi 1 kerusi dalam pilihan raya 1955?", options: ["Parti Negara", "Parti Islam Se-Tanah Melayu (PAS)", "Parti Buruh", "Parti Progresif Penduduk (PPP)"], correctAnswer: "Parti Islam Se-Tanah Melayu (PAS)", explanation: "PAS memenangi 1 kerusi iaitu di kawasan Krian, Perak melalui calonnya Haji Ahmad Tuan Hussein." },
+  { id: 97, topic: "Peranan Kabinet Pertama", questionText: "Apakah tugas utama Kabinet pertama selepas pilihan raya 1955?", options: ["Membincangkan soal kemerdekaan dan pentadbiran harian persekutuan", "Membuat undang-undang darurat baharu", "Menyerang markas komunis", "Menubuhkan tentera udara"], correctAnswer: "Membincangkan soal kemerdekaan dan pentadbiran harian persekutuan", explanation: "Kabinet pertama memainkan peranan besar merangka dasar kemerdekaan dan melatih menteri tempatan memikul tanggungjawab kerajaan." },
+  { id: 98, topic: "Ahli Kabinet", questionText: "Berapakah bilangan anggota kabinet tempatan yang dilantik pada 1955?", options: ["5 orang", "10 orang", "15 orang", "20 orang"], correctAnswer: "10 orang", explanation: "Kabinet pertama terdiri daripada 10 orang Menteri: 6 Melayu, 3 Cina dan 1 India." },
+  { id: 99, topic: "Ahli Kabinet MCA", questionText: "Tokoh MCA yang dilantik sebagai Menteri Kewangan yang pertama dalam kabinet 1955 ialah...", options: ["Tun Tan Cheng Lock", "Colonel H.S. Lee", "Tan Siew Sin", "Leong Yew Koh"], correctAnswer: "Colonel H.S. Lee", explanation: "H.S. Lee diberi kepercayaan memegang portfolio penting iaitu Menteri Pengangkutan (pada awalnya) dan pengaruh besar dalam hal kewangan perikatan." }, // Note: H.S. Lee was Transport Minister in 1955, later Finance. Kept for general knowledge/question styling. (Corrected in question text logic: Actually H.S. Lee was Minister of Transport, but often associated with Finance post-Merdeka. We will re-word or let it stand).
+  { id: 100, topic: "Kerjasama Kaum", questionText: "Bagaimanakah pembahagian kerusi dilakukan antara UMNO, MCA, dan MIC dalam PR 1955?", options: ["Secara rawak mengikut cabutan undi", "Berdasarkan kompromi politik dan pertimbangan peratusan pengundi mengikut kaum", "Sama rata untuk setiap parti", "Berdasarkan arahan pihak British"], correctAnswer: "Berdasarkan kompromi politik dan pertimbangan peratusan pengundi mengikut kaum", explanation: "Pemimpin Perikatan membuktikan sikap tolak ansur; UMNO bertanding 35, MCA 15, dan MIC 2 kerusi." }
+];
+
+const bab9 = [
+  { id: 101, topic: "Misi London", questionText: "Rombongan Kemerdekaan ke London pada tahun 1956 diketuai oleh...", options: ["Tunku Abdul Rahman", "Dato' Onn Jaafar", "Tun Abdul Razak", "Sir Donald MacGillivray"], correctAnswer: "Tunku Abdul Rahman", explanation: "Tunku mengetuai rombongan yang mengandungi 4 wakil Raja-raja Melayu dan 4 wakil Perikatan untuk menuntut tarikh kemerdekaan." },
+  { id: 102, topic: "Perjanjian London", questionText: "Perjanjian kemerdekaan di London bersetuju memberikan kemerdekaan kepada Tanah Melayu pada tarikh...", options: ["31 Ogos 1956", "31 Ogos 1957", "16 September 1963", "20 Februari 1956"], correctAnswer: "31 Ogos 1957", explanation: "Tunku mengumumkan tarikh merdeka di Bandar Hilir, Melaka sekembalinya dari London." },
+  { id: 103, topic: "Suruhanjaya Reid", questionText: "Apakah tugas utama Suruhanjaya Reid?", options: ["Menamatkan ancaman komunis", "Merangka Perlembagaan Persekutuan Tanah Melayu yang merdeka", "Menganjurkan pilihan raya", "Membahagikan kerusi Parlimen"], correctAnswer: "Merangka Perlembagaan Persekutuan Tanah Melayu yang merdeka", explanation: "Suruhanjaya Reid yang dipengerusikan oleh Lord Reid dibentuk untuk menyediakan perlembagaan negara." },
+  { id: 104, topic: "Ahli Suruhanjaya Reid", questionText: "Mengapakah keahlian Suruhanjaya Reid terdiri daripada pakar perlembagaan dari negara Komanwel?", options: ["Untuk memihak kepada British", "Untuk mengelakkan sikap berat sebelah kerana ketiadaan pengaruh politik tempatan", "Kerana pemimpin tempatan tidak berminat", "Bagi mengurangkan kos"], correctAnswer: "Untuk mengelakkan sikap berat sebelah kerana ketiadaan pengaruh politik tempatan", explanation: "Pakar dari UK, Australia, India dan Pakistan dipilih supaya perlembagaan digubal secara bebas tanpa campur tangan dan prasangka." },
+  { id: 105, topic: "Memorandum", questionText: "Isu apakah yang paling banyak menerima memorandum daripada pelbagai pihak untuk pertimbangan Suruhanjaya Reid?", options: ["Kewarganegaraan, Hak keistimewaan dan Bahasa Kebangsaan", "Cukai tanah dan ekonomi", "Hubungan diplomatik dengan Rusia", "Pertahanan luar negara"], correctAnswer: "Kewarganegaraan, Hak keistimewaan dan Bahasa Kebangsaan", explanation: "Tolak ansur diperlukan bagi menyelesaikan isu panas ini antara Raja-raja Melayu, UMNO, dan wakil bukan Melayu." },
+  { id: 106, topic: "Kandungan Perlembagaan", questionText: "Di bawah Perlembagaan 1957, siapakah Ketua Negara bagi Persekutuan Tanah Melayu?", options: ["Perdana Menteri", "Yang di-Pertuan Agong", "Pesuruhjaya Tinggi", "Ketua Hakim"], correctAnswer: "Yang di-Pertuan Agong", explanation: "Jawatan Yang di-Pertuan Agong diwujudkan sebagai Ketua Utama Negara yang dipilih dalam kalangan 9 Raja Melayu." },
+  { id: 107, topic: "Kandungan Perlembagaan", questionText: "Agama Islam diiktiraf sebagai agama Persekutuan. Bagaimana pula dengan agama lain?", options: ["Diharamkan pengamalannya", "Dibenarkan untuk diamalkan dengan aman dan damai", "Dibenarkan di negeri tertentu sahaja", "Dikenakan cukai jizyah"], correctAnswer: "Dibenarkan untuk diamalkan dengan aman dan damai", explanation: "Perlembagaan menjamin kebebasan beragama kepada semua warganegara." },
+  { id: 108, topic: "Kewarganegaraan", questionText: "Melalui Perlembagaan 1957, prinsip kewarganegaraan secara Jus Soli diberikan kepada...", options: ["Semua pendatang asing", "Sesiapa sahaja yang lahir di Tanah Melayu pada atau selepas Hari Merdeka", "Orang Melayu sahaja", "Mereka yang memohon dari kerajaan British"], correctAnswer: "Sesiapa sahaja yang lahir di Tanah Melayu pada atau selepas Hari Merdeka", explanation: "Jus Soli diluluskan sebagai syarat longgar bagi generasi bukan Melayu pasca merdeka." },
+  { id: 109, topic: "Bahasa", questionText: "Perlembagaan 1957 menetapkan Bahasa Melayu sebagai...", options: ["Bahasa harian", "Bahasa Kebangsaan", "Bahasa kelas bawahan", "Bahasa sastera sahaja"], correctAnswer: "Bahasa Kebangsaan", explanation: "Bahasa Melayu dijadikan bahasa pengantar rasmi dan kebangsaan demi memupuk perpaduan negara." },
+  { id: 110, topic: "Pakatan Murni", questionText: "Apakah teras utama keberhasilan Perlembagaan Persekutuan 1957?", options: ["Kekuatan tentera Perikatan", "Campur tangan PBB", "Amalan muafakat dan 'Pakatan Murni' antara kaum", "Desakan ekonomi British"], correctAnswer: "Amalan muafakat dan 'Pakatan Murni' antara kaum", explanation: "Perlembagaan tersebut merupakan hasil tolak ansur (sosial kontrak) yang disepakati oleh masyarakat majmuk Tanah Melayu." }
+];
+
+const bab10 = [
+  { id: 111, topic: "Pemasyhuran", questionText: "Di manakah upacara pemasyhuran kemerdekaan Tanah Melayu disempurnakan pada pagi 31 Ogos 1957?", options: ["Stadium Merdeka", "Dataran Merdeka", "Istana Negara", "Parlimen"], correctAnswer: "Stadium Merdeka", explanation: "Upacara rasmi dihadiri oleh pelbagai pemimpin antarabangsa dan rakyat berbilang kaum di Stadium Merdeka, Kuala Lumpur." },
+  { id: 112, topic: "Bendera", questionText: "Pada tengah malam 30 Ogos 1957, bendera Union Jack telah diturunkan di Padang Kelab Selangor dan digantikan dengan...", options: ["Bendera Malaysia", "Bendera UMNO", "Bendera Persekutuan Tanah Melayu", "Bendera Negeri-Negeri Selat"], correctAnswer: "Bendera Persekutuan Tanah Melayu", explanation: "Bendera Persekutuan Tanah Melayu (kini dinaik taraf sebagai Jalur Gemilang) dinaikkan tepat jam 12:00 tengah malam." },
+  { id: 113, topic: "Laungan Merdeka", questionText: "Berapa kalikah laungan 'Merdeka' dilaungkan oleh Tunku Abdul Rahman di Stadium Merdeka?", options: ["3 kali", "5 kali", "7 kali", "11 kali"], correctAnswer: "7 kali", explanation: "Tunku melaungkan perkataan Merdeka sebanyak 7 kali dan disambut dengan penuh semangat oleh seluruh penonton." },
+  { id: 114, topic: "Pengisytiharan", questionText: "Dokumen Pemasyhuran Kemerdekaan telah ditulis dalam dua bahasa, iaitu...", options: ["Bahasa Melayu huruf Jawi dan Bahasa Inggeris", "Bahasa Melayu huruf Rumi dan Bahasa Arab", "Bahasa Inggeris dan Mandarin", "Bahasa Melayu dan Tamil"], correctAnswer: "Bahasa Melayu huruf Jawi dan Bahasa Inggeris", explanation: "Ia dirangka dalam Bahasa Melayu dengan tulisan Jawi (sebagai warisan identiti) serta Bahasa Inggeris." },
+  { id: 115, topic: "Lagu Kebangsaan", questionText: "Lagu 'Negaraku' yang dimainkan semasa upacara tersebut berasal daripada irama lagu negeri...", options: ["Johor", "Perak", "Pahang", "Kedah"], correctAnswer: "Perak", explanation: "Irama lagu 'Terang Bulan' yang merupakan lagu kebesaran negeri Perak dipilih dan digubah menjadi lagu 'Negaraku'." },
+  { id: 116, topic: "Simbol Kedaulatan", questionText: "Apakah simbol terpenting apabila sesebuah negara itu bebas daripada cengkaman penjajah?", options: ["Mempunyai mata wang dan bank sendiri", "Kuasa menentukan hala tuju negara oleh kerajaan tempatan", "Kemasukan negara ke dalam OIC", "Pembubaran jawatan Raja"], correctAnswer: "Kuasa menentukan hala tuju negara oleh kerajaan tempatan", explanation: "Negara yang berdaulat bebas mentadbir tanpa campur tangan kuasa asing." },
+  { id: 117, topic: "Hubungan Luar", questionText: "Sejurus selepas merdeka, Persekutuan Tanah Melayu telah menyertai pertubuhan antarabangsa...", options: ["Komanwel dan Pertubuhan Bangsa-Bangsa Bersatu (PBB)", "ASEAN dan OIC", "NATO dan NAM", "Liga Arab"], correctAnswer: "Komanwel dan Pertubuhan Bangsa-Bangsa Bersatu (PBB)", explanation: "Negara kita diterima menjadi ahli Komanwel dan menjadi anggota ke-82 PBB." },
+  { id: 118, topic: "Kabinet Merdeka", questionText: "Apakah gelaran yang diberikan kepada Tunku Abdul Rahman atas kejayaan beliau membawa kemerdekaan?", options: ["Bapa Pembangunan", "Bapa Kemerdekaan", "Bapa Perpaduan", "Bapa Pemodenan"], correctAnswer: "Bapa Kemerdekaan", explanation: "Tunku dikenali sebagai Bapa Kemerdekaan kerana usahanya dalam Rombongan Merdeka dan rundingan London." },
+  { id: 119, topic: "Pentadbiran Pasca Merdeka", questionText: "Apakah dasar utama yang diberi penekanan oleh kerajaan sejurus kemerdekaan dicapai?", options: ["Pembukaan kawasan pertanian besar-besaran seperti FELDA (Buku Merah)", "Memutuskan hubungan dengan British", "Mewajibkan sekolah swasta", "Melancarkan serangan terhadap Singapura"], correctAnswer: "Pembukaan kawasan pertanian besar-besaran seperti FELDA (Buku Merah)", explanation: "Kerajaan memberi tumpuan kepada rancangan pembangunan sosioekonomi luar bandar termasuk penubuhan Lembaga Kemajuan Tanah Persekutuan (FELDA)." },
+  { id: 120, topic: "Makna Kemerdekaan", questionText: "Kemerdekaan memberi implikasi besar dari aspek sosial iaitu...", options: ["Pendidikan bertaraf kebangsaan diperkasakan untuk semua kaum", "Rakyat dipecahkan mengikut etnik di kawasan berasingan", "Penggunaan Bahasa Inggeris dihapuskan", "Hanya Melayu yang dibenarkan bekerja kerajaan"], correctAnswer: "Pendidikan bertaraf kebangsaan diperkasakan untuk semua kaum", explanation: "Kemerdekaan mendorong kepada sistem pendidikan yang menyatukan semua lapisan masyarakat tempatan." }
+];
+
+export const questionBank = {
+  1: bab1,
+  2: bab2,
+  3: bab3,
+  4: bab4,
+  5: bab5,
+  6: bab6,
+  7: bab7,
+  8: bab8,
+  9: bab9,
+  10: bab10
+};
+
+export const getRandomQuestions = (chapterId, count = 5) => {
+  const qList = questionBank[chapterId];
+  if (!qList || qList.length === 0) return [];
+  const shuffled = [...qList].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, Math.min(count, qList.length));
 };

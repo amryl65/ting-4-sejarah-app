@@ -1,8 +1,11 @@
 import Timer from './Timer';
+import { notesBank } from '../data/notesBank';
 
-export default function QuizView({ question, currentIndex, total, onAnswer, onTimeout }) {
+export default function QuizView({ chapterId, question, currentIndex, total, onAnswer, onTimeout }) {
+  const chapterData = notesBank[chapterId];
   return (
     <div className="comic-panel">
+      <h2 className="comic-title" style={{ fontSize: '1.8rem', marginBottom: '10px' }}>{chapterData?.title}</h2>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', fontWeight: 'bold' }}>
         <span>Topik: {question.topic}</span>
         <span>Soalan {currentIndex + 1} / {total}</span>

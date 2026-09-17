@@ -1,7 +1,11 @@
-export default function ResultsView({ results, onRestart, onHome }) {
+import { notesBank } from '../data/notesBank';
+
+export default function ResultsView({ chapterId, results, onRestart, onHome }) {
   const total = results.length;
   const correctCount = results.filter(r => r.isCorrect).length;
   const percentage = (correctCount / total) * 100;
+
+  const chapterData = notesBank[chapterId];
 
   let grade = 'G';
   if (percentage >= 90) grade = 'A+';
@@ -17,6 +21,9 @@ export default function ResultsView({ results, onRestart, onHome }) {
   return (
     <div className="comic-panel">
       <h2 className="comic-title" style={{ fontSize: '2.5rem' }}>Keputusan Kuiz!</h2>
+      <h3 className="text-center" style={{ fontFamily: "'Bangers', cursive", fontSize: '1.5rem', color: 'var(--comic-blue)', marginBottom: '15px' }}>
+        {chapterData?.title}
+      </h3>
       <div className="text-center mb-4">
         <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>Markah Anda: {percentage}% ({correctCount}/{total})</div>
         <div className="grade-display">{grade}</div>
